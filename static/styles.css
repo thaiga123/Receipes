@@ -16,7 +16,6 @@ body {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 20px;
-    margin-right: 0
 }
 
 .names {
@@ -33,7 +32,8 @@ body {
     padding: 10px;
     margin: 10px;
     height: auto;
-    width: 400px;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maintain a max size for larger screens */
     border-radius: 20px;
     background-color: rgb(194, 194, 194);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -41,4 +41,14 @@ body {
 
 h2 {
     text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #header {
+        font-size: 30px;
+    }
+    .cards {
+        width: 95%; /* Take up more of the screen width */
+    }
 }
